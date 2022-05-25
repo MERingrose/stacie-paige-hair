@@ -29,7 +29,7 @@ header h1{
     display:inline-block;
     margin-left: 10rem;
     color:#9AA7AC;
-    background-color: #141415;
+    /* background-color: #141415; */
     padding-left: 4px;
     padding-right: 4px;
 }
@@ -74,6 +74,16 @@ header li{
 
 .button:hover{
     color: yellow;
+}
+
+.card-container{
+    max-width: 33.33%;
+    margin-top: -50px;
+    display: inline-block;
+}
+
+.card-image{
+    max-width: 100%;
 }
 
 #myVideo {
