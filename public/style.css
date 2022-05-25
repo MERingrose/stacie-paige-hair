@@ -72,6 +72,10 @@ header li{
     margin-top: 50px;
 }
 
+.button:hover{
+    color: yellow;
+}
+
 #myVideo {
     width:50%;
     right: 0;
