@@ -11,9 +11,10 @@ function App() {
       <div>
       <div className="App">
         <header className="App-header">
-        <h1>Stacie Paige Hair.</h1>
+        <h1>Stacie Paige Hair</h1>
         {/* <img src="./images/logo.jpg" alt="Stacie Paige Hair Logo"></img> */}
-        <button className="button" text="Appointments" type="button" onClick={buttonClicked}>Appointments</button>
+        {/* <button className="button" text="Appointments" type="button" onClick={buttonClicked}>Appointments</button> */}
+        <a href="https://www.vagaro.com/weekly-trimtrue/book-now" className="fixedbutton">Bookings</a>
         </header>
       </div>
       <div>
@@ -23,9 +24,9 @@ function App() {
       </video>
       </div>
       <div>
-      <Card src="./images/logo.jpg" alt="This is a picture" />
-      <Card src="./images/logo.jpg" alt="This is a picture" />
-      <Card src="./images/logo.jpg" alt="This is a picture" />
+        <Card src="./images/Brunette.jpg" alt="A brunette smiling" />
+        <Card src="./images/Blonde.jpg" alt="A blonde smiling" />
+        <Card src="./images/Balayage.jpg" alt="An example of balayage" />
       </div>
       </div>
     );

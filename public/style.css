@@ -24,15 +24,16 @@ header img{
 }
 
 header h1{
-    font-family: 'EB Garamond', serif;
-    font-size: 60px;
+    font-family: 'Rock Salt', cursive;
+    font-size: 50px;
     display:inline-block;
     margin-left: 10rem;
-    color:#9AA7AC;
+    color:#aab195;
     /* background-color: #141415; */
     padding-left: 4px;
     padding-right: 4px;
-}
+    text-shadow: 1px 1px 2px black;
+}   
 
 header a:hover{
     color: yellow;
@@ -55,37 +56,40 @@ header li{
 
 }
 
-.button{
-    background-image: url("./images/tropical-image.jpg");
-    /* background-color: #141415; */
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    box-shadow: -2px 2px 2px black ;
-    color: whitesmoke;
-    font-family: 'Smooch', cursive;
+.fixedbutton {
     font-size: 40px;
-    border: 1px solid whitesmoke;
-    border-radius: 5%;
-    width: 250px;
-    height: 75px;
-    float: right;
-    margin-right: 10%;
-    margin-top: 50px;
+    color: #aab195;
+    position: fixed;
+    bottom: 20px;
+    right: 20px; 
+    text-decoration: none;
+    font-family: 'Rock Salt', cursive;
+    text-shadow: 1px 1px 2px black;
 }
 
 .button:hover{
     color: black;
     text-shadow: -1px 0 whitesmoke, 0 1px whitesmoke, 1px 0 whitesmoke, 0 -1px whitesmoke;
+    box-shadow: -2px 2px 4px black ;
 
 }
 
 .card-container{
     max-width: 33.33%;
-    margin-top: -50px;
+    /* margin-top: 50px; */
     display: inline-block;
+    margin: auto;
 }
 
 .card-image{
-    max-width: 100%;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 black;
+    height: 80%;
+    background-size: cover;
+    border-radius: 100%;
 }
 
 #myVideo {
