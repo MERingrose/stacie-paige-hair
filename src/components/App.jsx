@@ -2,9 +2,13 @@ import * as React from "react";
 // import Button from "./Button";
 import Card from "./Card";
 
-function buttonClicked(){
-  window.open('https://www.vagaro.com/weekly-trimtrue/book-now');
-}
+// function buttonClicked(){
+//   window.open('https://www.vagaro.com/weekly-trimtrue/book-now');
+// }
+var className = "container ";
+
+
+
 
 function App() {
     return (
@@ -15,6 +19,11 @@ function App() {
         {/* <img src="./images/logo.jpg" alt="Stacie Paige Hair Logo"></img> */}
         {/* <button className="button" text="Appointments" type="button" onClick={buttonClicked}>Appointments</button> */}
         <a href="https://www.vagaro.com/weekly-trimtrue/book-now" className="fixedbutton">Bookings</a>
+        <div className={className} onClick={menu(this)}>
+          <div className="bar1"></div>
+          <div className="bar2"></div>
+          <div className="bar3"></div>
+        </div>
         </header>
       </div>
       <div>
@@ -31,6 +40,12 @@ function App() {
       </div>
     );
   }
+
+  
+function menu(element){
+  var isOpen = true;
+  className = "container " + (isOpen ? "change" : null);
+}
   
   export default App;
   
