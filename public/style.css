@@ -80,7 +80,7 @@ header li{
     height: 7px;
     background-color: #aab195;
     margin: 6px 0;
-    box-shadow: -2px 2px 4px black;
+    /* box-shadow: -2px 2px 4px black; */
     transition: 0.4s;
 }
 

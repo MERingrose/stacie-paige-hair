@@ -7,7 +7,10 @@ import Card from "./Card";
 // }
 var className = "container ";
 
-
+function menu(){
+  var isOpen = true;
+  className.concat(isOpen ? " change" : null);
+}
 
 
 function App() {
@@ -19,7 +22,7 @@ function App() {
         {/* <img src="./images/logo.jpg" alt="Stacie Paige Hair Logo"></img> */}
         {/* <button className="button" text="Appointments" type="button" onClick={buttonClicked}>Appointments</button> */}
         <a href="https://www.vagaro.com/weekly-trimtrue/book-now" className="fixedbutton">Bookings</a>
-        <div className={className} onClick={menu(this)}>
+        <div className={className} onClick={menu}>
           <div className="bar1"></div>
           <div className="bar2"></div>
           <div className="bar3"></div>
@@ -42,10 +45,7 @@ function App() {
   }
 
   
-function menu(element){
-  var isOpen = true;
-  className = "container " + (isOpen ? "change" : null);
-}
+
   
   export default App;
   
