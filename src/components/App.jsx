@@ -1,19 +1,18 @@
-import * as React from "react";
-// import Button from "./Button";
+import React, { useState } from "react";
 import Card from "./Card";
 
-// function buttonClicked(){
-//   window.open('https://www.vagaro.com/weekly-trimtrue/book-now');
-// }
-var className = "container ";
-
-function menu(){
-  var isOpen = true;
-  className.concat(isOpen ? " change" : null);
-}
 
 
 function App() {
+
+const [className, setState] = useState("container");
+
+const [isOpen, setOpen] = useState(false);
+
+function menu(){
+  setOpen(!isOpen);
+  isOpen ? setState("container change") : setState("container");
+}
     return (
       <div>
       <div className="App">
