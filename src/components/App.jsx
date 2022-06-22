@@ -6,7 +6,6 @@ import Card from "./Card";
 function App() {
 
 const [className, setState] = useState("container");
-
 const [isOpen, setOpen] = useState(false);
 
 function menu(){
@@ -20,7 +19,7 @@ function menu(){
         <h1>Stacie Paige Hair</h1>
         {/* <img src="./images/logo.jpg" alt="Stacie Paige Hair Logo"></img> */}
         {/* <button className="button" text="Appointments" type="button" onClick={buttonClicked}>Appointments</button> */}
-        <a href="https://www.vagaro.com/weekly-trimtrue/book-now" className="fixedbutton">Bookings</a>
+        {/* <a href="https://www.vagaro.com/weekly-trimtrue/book-now" className="fixedbutton">Bookings</a> */}
         <div className={className} onClick={menu}>
           <div className="bar1"></div>
           <div className="bar2"></div>
@@ -29,12 +28,16 @@ function menu(){
         </header>
       </div>
       <div>
+      <section id="section01" class="demo">
+          <a href="#section02"><span></span></a>
+        </section>
       <video autoPlay muted loop id="myVideo">
         <source src="./videos/background-babes.mp4" type="video/mp4" />
         Your Browser Does Not Support HTML5 video.
       </video>
+
       </div>
-      <div>
+      <div id="section02">
         <Card src="./images/Brunette.jpg" alt="A brunette smiling" />
         <Card src="./images/Blonde.jpg" alt="A blonde smiling" />
         <Card src="./images/Balayage.jpg" alt="An example of balayage" />
