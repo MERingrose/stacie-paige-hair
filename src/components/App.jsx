@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Card from "./Card";
+import Anchor from "./Anchor";
 
 
 
@@ -28,7 +29,7 @@ function menu(){
         </header>
       </div>
       <div>
-      <section id="section01" class="demo">
+      <section id="section01" class="arrow">
           <a href="#section02"><span></span></a>
         </section>
       <video autoPlay muted loop id="myVideo">
@@ -41,6 +42,11 @@ function menu(){
         <Card src="./images/Brunette.jpg" alt="A brunette smiling" />
         <Card src="./images/Blonde.jpg" alt="A blonde smiling" />
         <Card src="./images/Balayage.jpg" alt="An example of balayage" />
+      </div>
+      <div id="section03">
+        <h1>Contact</h1>
+        <h2>Weekly Whyte Ave: <a href="tel: +18255125631">(825)512-5631</a></h2>
+        <Anchor link="https://www.vagaro.com/us02/weekly-trimtrue" text="Booking" />
       </div>
       </div>
     );

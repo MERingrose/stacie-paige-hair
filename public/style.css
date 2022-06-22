@@ -120,7 +120,7 @@ header li{
     border-radius: 10%;
 }
 
-.demo a {
+.arrow a {
     position: absolute;
     bottom: 20px;
     left: 50%;
@@ -134,7 +134,7 @@ header li{
     text-decoration: none;
     transition: opacity .3s;
   }
-  .demo a:hover {
+  .arrow a:hover {
     opacity: .5;
   }
 
@@ -175,4 +175,8 @@ header li{
     transform: rotate(-45deg);
     box-sizing: border-box;
     z-index: 1;
+  }
+
+  #section02{
+      height: 10%;
   }
