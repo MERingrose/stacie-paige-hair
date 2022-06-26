@@ -18,6 +18,9 @@ function menu(){
       <div className="App">
         <header className="App-header">
         <h1>Stacie Paige Hair</h1>
+        <div id="sideMenu">
+          <Anchor link="gallery.html" text="Gallery" />
+        </div>
         {/* <img src="./images/logo.jpg" alt="Stacie Paige Hair Logo"></img> */}
         {/* <button className="button" text="Appointments" type="button" onClick={buttonClicked}>Appointments</button> */}
         {/* <a href="https://www.vagaro.com/weekly-trimtrue/book-now" className="fixedbutton">Bookings</a> */}
