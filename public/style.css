@@ -184,3 +184,15 @@ header li{
   #section02{
       height: 10%;
   }
+
+  #side-menu{
+    position: absolute;
+    margin-right: 0;
+    margin-left: 78%;
+    width: 450px;
+    height: 250%;
+    background-color: yellow;
+    margin-top: -50px;
+  }
+  
+  
