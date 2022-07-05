@@ -185,14 +185,19 @@ header li{
       height: 10%;
   }
 
-  #side-menu{
-    position: absolute;
+  .side-menu{
+    position: fixed;
     margin-right: 0;
-    margin-left: 78%;
-    width: 450px;
+    margin-left: 100%;
+    width: 225px;
     height: 250%;
     background-color: yellow;
     margin-top: -50px;
+    transition: .3s;
+  }
+
+  .menu-open{
+    margin-left: 86%;
   }
   
   

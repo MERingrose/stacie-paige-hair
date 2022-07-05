@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Card from "./Card";
 import Anchor from "./Anchor";
 
@@ -8,10 +8,12 @@ function App() {
 
 const [className, setState] = useState("container");
 const [isOpen, setOpen] = useState(false);
+const [sideMenu, toggleMenu] = useState("side-menu");
 
 function menu(){
   setOpen(!isOpen);
   isOpen ? setState("container change") : setState("container");
+  isOpen ? toggleMenu("side-menu menu-open") : toggleMenu("side-menu");
 }
     return (
       <div>
@@ -27,7 +29,7 @@ function menu(){
           <div className="bar2"></div>
           <div className="bar3"></div>
         </div>
-        <div id="side-menu">
+        <div id="side-menu" className={sideMenu}>
           <Anchor link="gallery.html" text="Gallery" />
         </div>
         </header>
