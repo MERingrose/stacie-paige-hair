@@ -30,7 +30,12 @@ function menu(){
           <div className="bar3"></div>
         </div>
         <div id="side-menu" className={sideMenu}>
-          <Anchor link="gallery.html" text="Gallery" />
+          <ul className="side-menu-links">
+          <li><Anchor link="gallery.html" text="Gallery" /></li>
+          <li><Anchor link="#section03" text="Contact" /></li>
+          <li><Anchor link="#section03" text="Weddings" /></li>
+          </ul>
+
         </div>
         </header>
       </div>
@@ -50,9 +55,11 @@ function menu(){
         <Card src="./images/Balayage.jpg" alt="An example of balayage" />
       </div>
       <div id="section03">
+        <div id="contact-pane">
         <h1>Contact</h1>
         <h2>Weekly Whyte Ave: <a href="tel: +18255125631">(825)512-5631</a></h2>
         <Anchor link="https://www.vagaro.com/us02/weekly-trimtrue" text="Booking" />
+        </div>
       </div>
       </div>
     );
