@@ -6,7 +6,7 @@ import Anchor from "./Anchor";
 
 function App() {
 
-const [className, setState] = useState("container");
+const [container, setState] = useState("container");
 const [isOpen, setOpen] = useState(false);
 const [sideMenu, toggleMenu] = useState("side-menu");
 
@@ -18,13 +18,10 @@ function menu(){
     return (
       <div>
       <div className="App">
-        <header className="App-header">
+        <header className="header">
         <h1>Stacie Paige Hair</h1>
 
-        {/* <img src="./images/logo.jpg" alt="Stacie Paige Hair Logo"></img> */}
-        {/* <button className="button" text="Appointments" type="button" onClick={buttonClicked}>Appointments</button> */}
-        {/* <a href="https://www.vagaro.com/weekly-trimtrue/book-now" className="fixedbutton">Bookings</a> */}
-        <div className={className} onClick={menu}>
+        <div className={container} onClick={menu}>
           <div className="bar1"></div>
           <div className="bar2"></div>
           <div className="bar3"></div>
@@ -40,14 +37,15 @@ function menu(){
         </header>
       </div>
       <div>
-      <section id="section01" class="arrow">
+      <section id="section01" className="arrow">
           <a href="#section02"><span></span></a>
         </section>
-      <video autoPlay muted loop id="myVideo">
+        <div className="video-wrapper">
+        <video playsInline autoPlay muted loop id="myVideo">
         <source src="./videos/background-babes.mp4" type="video/mp4" />
         Your Browser Does Not Support HTML5 video.
       </video>
-
+        </div>
       </div>
       <div id="section02">
         <Card src="./images/Brunette.jpg" alt="A brunette smiling" />
