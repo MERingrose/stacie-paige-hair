@@ -8,11 +8,12 @@ body{
 }
 
 header{
-    align-items: center;
+    top: 0;
     min-height: 100px;
     min-width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 9;
+
 }
 
 /* header img{
@@ -26,14 +27,16 @@ header{
 
 header h1{
     font-family: 'Rock Salt', cursive;
-    font-size: 2.3vw;
-    display:inline-block;
-    margin-left: 10vw;
+    font-size: 35px;
+    display: inline-block;
     color:#aab195;
     /* background-color: #141415; */
-    padding-left: 4px;
-    padding-right: 4px;
+    top: 0;
+    left: 75px;
     text-shadow: 0 0 10px black;
+    position: fixed;
+    Z-index: 10;
+    
 }   
 
 header a:hover{
@@ -44,6 +47,15 @@ header li{
     float: left;
     margin-left:-8%;
     font-size: 4em;
+}
+
+video {
+  width:50%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  min-width:100%;
+  z-index: -1;
 }
 
 .header-list{
@@ -57,7 +69,7 @@ header li{
 
 }
 
-.fixedbutton {
+/* .fixedbutton {
     font-size: 40px;
     color: #aab195;
     position: fixed;
@@ -66,17 +78,20 @@ header li{
     text-decoration: none;
     font-family: 'Rock Salt', cursive;
     text-shadow: 1px 1px 2px black;
-}
+} */
 
 .container {
     /* display: inline-block; */
     /* cursor: pointer; */
-    float: right;
-    margin-top: 2vw;
-    margin-right: 100px;
+    padding-left: 10px;
+    padding-top: 10px;
+    position: fixed;
+    right: 100px;
+    top: 40px;
     min-width: 70px;
     min-height: 60px;
     z-index: 10;
+    
 }
   
 .bar1, .bar2, .bar3 {
@@ -87,6 +102,7 @@ header li{
     margin: 6px 0;
     box-shadow: 0px 0px 7px 1px black;
     transition: 0.4s;
+    z-index: 2;
 }
 
 .change .bar1 {
@@ -143,31 +159,62 @@ header li{
     text-decoration: none;
     transition: opacity .3s;
   }
+
   .arrow a:hover {
     opacity: .5;
   }
 
   .video-wrapper{
     width: 100%;
-    position: relative;
+    position: fixed;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-#myVideo {
-    width:50%;
-    right: 0;
-    bottom: 0;
-    min-width:100%;
     box-shadow: 0 4px 8px 0 black;
-    z-index: 0;
   }
 
-  #section01 a {
-    padding-top: 60px;
+  .side-menu{
+    position: fixed;
+    margin-right: 0;
+    margin-left: 100vw;
+    width: 250px;
+    height: 50vh;
+    /* background-color: yellow; */
+    top: 80px;
+    transition: .3s;
+    visibility: hidden;
   }
+
+  .menu-open{
+    margin-left: calc(100vw - 250px);
+    visibility:visible;
+  }
+  
+  .side-menu a{
+    color:rgb(214, 176, 142);
+    font-family: 'Rock Salt', cursive;
+    margin-left: 0.5em;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 0.4em;
+    text-shadow: 0 0 4px black;
+  }
+
+  .side-menu a:hover{  
+    color:rgb(224, 216, 138);
+  }
+  
+  .side-menu li{
+    display: block;
+  }
+
+
+
+  /* #section01 a {
+    padding-top: 600px;
+  } */
+
   #section01 a span {
     position: absolute;
     top: 0;
@@ -178,7 +225,7 @@ header li{
     border: 1px solid #fff;
     border-radius: 100%;
     box-sizing: border-box;
-    z-index: 1;
+    
   }
   #section01 a span::after {
     position: absolute;
@@ -193,17 +240,27 @@ header li{
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     box-sizing: border-box;
-    z-index: 1;
+    /* z-index: 2; */
   }
 
   #section02{
-      height: 10%;
+      height: 450px;
+      margin-top: calc(100vw * (9/16));
+      align-items: center;
+      padding-top: 20px;
+      background-color: rgb(255, 255, 240);
+      box-shadow: 0 0 4px 2px black;
   }
 
-  #section03{
-    background-color: rgb(214, 176, 142);
-    box-shadow: 0 -2px 4px 0 black;
+  #section02 h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
   }
+
+  /* #section03{
+    /* background-color: rgb(214, 176, 142); */
+    /* box-shadow: 0 -2px 4px 0 black; */
+  
 
   #contact-pane{
     margin-left: 40%;
@@ -211,37 +268,19 @@ header li{
     padding-bottom: 5vh;
   }
 
-  .side-menu{
+  #contact{
+    background-color: rgb(255, 255, 240);
+  }
+
+  #myvideo{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
     position: fixed;
-    margin-right: 0;
-    margin-left: 100vw;
-    width: 250px;
-    height: 50vh;
-    /* background-color: yellow; */
-    top: 80px;
-    transition: .3s;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
   }
 
-  .menu-open{
-    margin-left: calc(100vw - 250px);
-
-  }
-  
-  .side-menu a{
-    color:rgb(214, 176, 142);
-    font-family: 'Rock Salt', cursive;
-    margin-left: 0.5em;
-    margin-top: 10px;
-    text-decoration: none;
-    font-size: 0.4em;
-    text-shadow: 0 0 4px black;
-  }
-
-  .side-menu a:hover{
-    
-    color:rgb(224, 216, 138);
-  }
-  
-  .side-menu li{
-    display: block;
-  }
