@@ -263,13 +263,14 @@ video {
   
 
   #contact-pane{
-    margin-left: 40%;
+    text-align: center;
     padding-top: 5vh;
     padding-bottom: 5vh;
   }
 
   #contact{
     background-color: rgb(255, 255, 240);
+    box-shadow: 0 0 4px 2px black;
   }
 
   #myvideo{
