@@ -10,14 +10,14 @@ export default function Header(){
 
     function openMenu(){
         setOpen(!isOpen);
-      }
+    }
 
     useEffect(()=>  {
         isOpen ? setState("container change") : setState("container");
         isOpen ? toggleMenu("side-menu menu-open") : toggleMenu("side-menu");
     }, [isOpen]);
 
-   return <header className="header">
+return <header className="header">
 
     <h1>Stacie Paige Hair</h1>
 
