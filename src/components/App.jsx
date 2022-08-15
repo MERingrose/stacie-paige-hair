@@ -1,17 +1,22 @@
 import React from "react";
-import Card from "./Card";
-import Anchor from "./Anchor";
-import Header from "./Header";
+// import Card from "./Card";
+// import Anchor from "./Anchor";
+import NavBar from "./NavBar";
+import { Outlet } from "react-router-dom";
+
+
 
 function App() {
 
 return (
       <div>
-          <video playsInline autoPlay muted loop id="myVideo">
+        <NavBar />
+        <Outlet />
+          {/* <video playsInline autoPlay muted loop id="myVideo">
             <source src="./videos/background-babes.mp4" type="video/mp4" />
             Your Browser Does Not Support HTML5 video.
           </video>   
-          <Header />
+          
         <div>
           <section id="section01" className="arrow">
             <a href="#section02"><span></span></a>
@@ -35,7 +40,7 @@ return (
           <h2>Weekly Whyte Ave: <a href="tel: +18255125631">(825)512-5631</a></h2>
           <Anchor link="https://www.vagaro.com/us02/weekly-trimtrue" text="Booking" />
           </div>
-        </div>
+        </div> */}
       </div>
     );
   }

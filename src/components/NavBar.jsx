@@ -1,8 +1,14 @@
 import React, {useState} from "react";
 import { useEffect } from "react";
-import Anchor from "./Anchor.jsx";
+import { Link } from "react-router-dom";
 
-export default function Header(){
+// import Home from '../pages/Home.jsx';
+// import Gallery from '../pages/Gallery.jsx';
+// import Weddings from '../pages/Weddings.jsx';
+
+
+
+export default function NavBar(){
 
     const [container, setState] = useState("container");
     const [isOpen, setOpen] = useState(false);
@@ -17,9 +23,9 @@ export default function Header(){
         isOpen ? toggleMenu("side-menu menu-open") : toggleMenu("side-menu");
     }, [isOpen]);
 
-return <header className="header">
+return <nav className="header">
 
-    <h1>Stacie Paige Hair</h1>
+    <Link to="/" ><h1>Stacie Paige Hair</h1></Link>
 
     <div className={container} onClick={openMenu}>
       <div className="bar1"></div>
@@ -28,12 +34,21 @@ return <header className="header">
     </div>
 
     <div id="side-menu" className={sideMenu}>
+      
+      {/* <BrowserRouter>
+        <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/gallery' element={<Gallery />} />
+            <Route path='/weddings' element={<Weddings />} />
+        </Routes> */}
+    
       <ul className="side-menu-links">
-        <li><Anchor link="gallery.html" text="Gallery" /></li>
-        <li><Anchor link="#section03" text="Contact" /></li>
-        <li><Anchor link="#section03" text="Weddings" /></li>
+        <li><Link to="/gallery">Gallery</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
+        <li><Link to="/weddings">Weddings</Link></li>
       </ul>
-
+      
+      {/* </BrowserRouter> */}
     </div>
-  </header>
+  </nav>
 }
