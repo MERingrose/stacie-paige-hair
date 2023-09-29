@@ -4,19 +4,17 @@ import Anchor from '../components/Anchor';
 
 export default function Home(){
     return <div> 
-        <video playsInline autoPlay muted loop id="myVideo">
+    <video playsInline autoPlay muted loop id="myVideo">
         <source src="./videos/background-babes.mp4" type="video/mp4" />
         Your Browser Does Not Support HTML5 video.
     </video>   
     
-    <div>
-    <section id="section01" className="arrow">
-        <a href="#section02"><span></span></a>
-    </section>
-
-    </div>
-
     <div id="section02">
+         <div id="arrow_div">
+            <section id="section01" >
+                <a href="#section02"><span></span></a>
+            </section>
+        </div>
         <h1>Stacie is an Edmonton, Alberta based hair stylist.</h1>
     </div>
 

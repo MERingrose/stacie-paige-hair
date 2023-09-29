@@ -34,13 +34,6 @@ return <nav className="header">
     </div>
 
     <div id="side-menu" className={sideMenu}>
-      
-      {/* <BrowserRouter>
-        <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/gallery' element={<Gallery />} />
-            <Route path='/weddings' element={<Weddings />} />
-        </Routes> */}
     
       <ul className="side-menu-links">
         <li><Link to="/gallery">Gallery</Link></li>
