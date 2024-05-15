@@ -27,8 +27,8 @@ export default function Home(){
     <div id="contact">
         <div id="contact-pane">
             <h1>Contact</h1>
-            <h2>Weekly Whyte Ave: <a href="tel: +18255125631">(825)512-5631</a></h2>
-            <Anchor link="https://www.vagaro.com/" text="Booking" />
+            <h2>Goldie Salon: <a href="tel: +17804887765">(780)488-7765</a></h2>
+            <Anchor link="https://www.vagaro.com/goldie1" text="Booking" />
         </div>
     </div>
 </div>
