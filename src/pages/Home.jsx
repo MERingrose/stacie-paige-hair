@@ -10,12 +10,13 @@ export default function Home(){
     </video>   
     
     <div id="section02">
+        {/* arrow button */}
          <div id="arrow_div">
             <section id="section01" >
                 <a href="#section02"><span></span></a>
             </section>
         </div>
-        <h1>Stacie is an Edmonton, Alberta based hair stylist.</h1>
+        {/* <h1>Stacie is an Edmonton, Alberta based hair stylist.</h1> */}
     </div>
 
     <div id="section03">
