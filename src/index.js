@@ -8,8 +8,9 @@ import Gallery from './pages/Gallery';
 import Weddings from './pages/Weddings';
 import Contact from './pages/Contact';
 
+
 ReactDOM.render(
-  <BrowserRouter>
+  < BrowserRouter >
     <Routes>
       <Route path="/" element={(<App />)}>
         <Route path="/" element={<Home />} />
@@ -17,9 +18,7 @@ ReactDOM.render(
         <Route path="weddings" element={<Weddings />} />
         <Route path="contact" element={<Contact />} />
       </Route>
-    </Routes>  
-  </BrowserRouter>,
-  document.getElementById('root')
+    </Routes>
+  </BrowserRouter >, document.getElementById("root")
 );
 
-  
