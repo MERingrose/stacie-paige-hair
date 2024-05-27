@@ -4,20 +4,19 @@ import Anchor from '../components/Anchor';
 
 export default function Home(){
     return <div> 
-        <video playsInline autoPlay muted loop id="myVideo">
+    <video playsInline autoPlay muted loop id="myVideo">
         <source src="./videos/background-babes.mp4" type="video/mp4" />
         Your Browser Does Not Support HTML5 video.
     </video>   
     
-    <div>
-    <section id="section01" className="arrow">
-        <a href="#section02"><span></span></a>
-    </section>
-
-    </div>
-
     <div id="section02">
-        <h1>Stacie is an Edmonton, Alberta based hair stylist.</h1>
+        {/* arrow button */}
+         <div id="arrow_div">
+            <section id="section01" >
+                <a href="#section02"><span></span></a>
+            </section>
+        </div>
+        {/* <h1>Stacie is an Edmonton, Alberta based hair stylist.</h1> */}
     </div>
 
     <div id="section03">
@@ -29,8 +28,8 @@ export default function Home(){
     <div id="contact">
         <div id="contact-pane">
             <h1>Contact</h1>
-            <h2>Weekly Whyte Ave: <a href="tel: +18255125631">(825)512-5631</a></h2>
-            <Anchor link="https://www.vagaro.com/us02/weekly-trimtrue" text="Booking" />
+            <h2>Goldie Salon: <a href="tel: +17804887765">(780)488-7765</a></h2>
+            <Anchor link="https://www.vagaro.com/goldie1" text="Booking" />
         </div>
     </div>
 </div>
